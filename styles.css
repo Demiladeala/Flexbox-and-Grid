@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+body{
+    background-color: hsl(0, 0%, 95%);
+    overflow-x: hidden;
+}
+footer{
+    position: fixed;
+    width: 100%;
+    background: hsl(197, 21%, 94%);
+    text-align: center;
+    padding:5px;
+    bottom:0;
+}
+header{
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+}
+header a{
+    background-color: brown;
+    color: white;
+    padding: 5px;
+    border-radius: 5px; 
+}
+.flex-container{
+    margin-top: 10%;
+}
+.flex-container h2{
+    font-size: 25px;
+    font-family: 'Big Shoulders Display', cursive;
+}
+.flex-container p{
+    font-size: 13px;
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+#color-1{
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+#color-2{
+    background-color: hsl(184, 100%, 22%);
+    border: none;
+}
+#color-3{
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+#color-1 a{
+    color: hsl(31, 77%, 52%);
+}
+#color-2 a{
+    color: hsl(184, 100%, 22%);
+}
+#color-3 a{
+   color: hsl(179, 100%, 13%);
+}
+#color-1 a:hover,
+#color-2 a:hover,
+#color-3 a:hover{
+    color: #fff;
+}
+.card-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: auto;
+    color: #fff;
+}
+.card{
+    width: 230px;
+    padding: 35px;
+}
+.card img{
+    margin-bottom: 20px;
+}
+.card h2{
+    margin-bottom: 15px;
+}
+.card p{
+    margin-bottom: 60px;
+}
+.card a{
+    margin-bottom: 5px;
+    background-color: #fff;
+    padding: 8px 13px;
+    border-radius: 12px;
+    font-size: 10px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+.card a:hover{
+    background-color: transparent;
+    border: solid 1px white;
+}
+/*GRID LAYOUT*/
+.container{
+    margin-top: 20px;
+}
+.holder{
+    height: 500px;
+    width: 65%;
+    margin: auto;
+    background-color: rgb(21, 21, 35);
+}
+.d1{background:orangered;}
+.d2{background:orange;}
+.d3{background:rgb(66, 176, 66);}
+.d4{background:deepskyblue;}
+.d5{background:deepskyblue;}
+
+.grid-col-span2{
+    grid-column: span 2;
+}
+.grid-row-span{
+    grid-row: span 2;
+}
+
+.grid-container{
+    width: 47%;
+    height: 400px;
+    margin-left: 4%;
+    margin-top: 2%;
+    position: absolute;
+    display: grid;
+    gap: 15px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 45% 15% 35% ;
+    grid-template-rows: 50% 25% 25%;
+}
